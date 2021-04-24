@@ -1,0 +1,27 @@
+.toggles-radio__input {
+  display: none;
+}
+
+.toggles-radio__button {
+  display: inline-block;
+  margin: 0 5px;
+  width: 6px;
+  height: 6px;
+  box-sizing: content-box;
+  background-clip: padding-box;
+  background-color: rgba(40, 54, 69, 0.3);
+  border: 3px solid transparent;
+  border-radius: 50%;
+  cursor: pointer;
+  &:hover, &:focus {
+    background-color: rgba(40, 54, 69, 0.6);
+  }
+  &:active {
+    background-color: rgba(40, 54, 69, 0.1);
+  }
+}
+
+.toggles-radio__input:checked + .toggles-radio__button {
+  background-color: transparent;
+  border-color: #283645;
+}

@@ -1,0 +1,115 @@
+.download-app {
+  position: relative;
+  // min-height: 462px;
+  min-height: 701px;
+  color: #ffffff;
+  text-align: center;
+  background-image: url("../img/bg-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center 0;
+  picture img {
+    position: absolute;
+    left: 0;
+    bottom: 240px;
+    display: block;
+    width: 258px;
+    height: 286px;
+  }
+}
+
+@media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+  .download-app {
+    background-image: url("../img/bg-mobile@2x.jpg");
+    background-size: 700px auto;
+  }
+}
+
+.download-app h1 {
+  display: none;
+}
+
+.download-app__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 25px;
+  background-color: #1d2631;
+  transform: translateY(462px);
+}
+
+.download-app__list {
+  .reset-list;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  margin-top: 30px;
+}
+
+.download-app__item {
+  margin-right: 35px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.download-app__text {
+  margin-top: 20px;
+  font-weight: 300;
+  width: 240px;
+}
+
+@media (min-width: @tablet-width) {
+  .download-app {
+    min-height: 730px;
+    background-image: url("../img/bg-tablet.jpg");
+    picture img {
+      left: 165px;
+      bottom: 0;
+      width: 469px;
+      height: 545px;
+    }
+  }
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    .download-app {
+      background-image: url("../img/bg-tablet@2x.jpg");
+      background-size: 1200px auto;
+    }
+  }
+
+  .download-app h1 {
+    display: inline-block;
+    width: 190px;
+    font-size: 40px;
+    font-weight: 300;
+  }
+
+  .download-app__block {
+    width: 300px;
+    margin-left: 20px;
+    background-color: transparent;
+    transform: translateY(175px);
+  }
+
+  .download-app__text {
+    width: 300px;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .download-app {
+    min-height: 853px;
+    padding: 0 10px;
+    background-image: none;
+    picture img {
+      left: 350px;
+      width: 555px;
+      height: 645px;
+    }
+  }
+
+  .download-app__block {
+    margin-left: 0px;
+  }
+}

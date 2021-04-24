@@ -1,0 +1,145 @@
+.advantages {
+  padding-top: 1px;
+  background: linear-gradient(174deg, #ffffff 25%, #f2f2f2 25%);
+  overflow: hidden;
+}
+
+.advantages__slogan {
+  margin: 0 auto;
+  margin-top: 35px;
+  margin-bottom: 90px;
+  width: 210px;
+  color: #283645;
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.advantages__wrapper {
+  padding: 0 20px;
+}
+
+.advantages__list {
+  .reset-list;
+  display: flex;
+  flex-direction: column;
+  width: 260px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.advantages__item {
+  picture {
+    display: none;
+  }
+}
+
+.advantages__title {
+  margin-bottom: 10px;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.advantages__text {
+  margin-top: 0;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.advantages__iphone {
+  width: 160px;
+  margin: 0 auto;
+  img {
+    display: block;
+    margin-bottom: -40px;
+    width: 160px;
+    height: 320px;
+  }
+}
+
+
+
+@media (min-width: @tablet-width) {
+  .advantages {
+    background: linear-gradient(177deg, #ffffff 41%, #f2f2f2 41%);
+  }
+  .advantages__slogan {
+    width: auto;
+    font-size: 40px;
+    font-weight: 300;
+    p:nth-child(1) {
+      margin-bottom: 0;
+    }
+    p:nth-child(2) {
+      margin-top: 0;
+    }
+  }
+  .advantages__wrapper {
+    display: flex;
+    width: 660px;
+    margin: 0 auto;
+  }
+  .advantages__list {
+    order: 2;
+    width: 300px;
+    margin: 0;
+    margin-top: 60px;
+    margin-left: auto;
+    text-align: left;
+  }
+  .advantages__iphone {
+    width: auto;
+    margin: 0;
+    img {
+      width: 268px;
+      margin-bottom: 0;
+      height: 481px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages {
+    background: linear-gradient(178deg, #ffffff 41%, #f2f2f2 41%);
+  }
+  .advantages__slogan {
+    font-size: 50px;
+    font-weight: 300;
+  }
+  .advantages__wrapper {
+    width: 960px;
+    padding: 0 10px;
+  }
+  .advantages__list {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+  .advantages__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    picture {
+      display: block;
+    }
+  }
+  .advantages__title {
+    margin-top: 55px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .advantages__text {
+    width: 240px;
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+  .advantages__iphone {
+    display: none;
+  }
+}

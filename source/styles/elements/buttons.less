@@ -1,0 +1,30 @@
+.buttons {
+  width: 300px;
+  padding: 15px 15px;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  border: 3px solid #ffffff;
+  border-radius: 30px;
+  transition: color 0.15s,
+              background-color 0.15s;
+  &:hover,
+  &:focus {
+    color: @link;
+    background-color: #ffffff;
+  }
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+    // box-shadow: inset 5px 5px 10px 0 #262626,
+    //             inset -5px -5px 10px 0 #262626;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .buttons {
+    font-size: 21px;
+    line-height: 21px;
+  }
+}
