@@ -111,7 +111,7 @@ gulp.task('clean', function () {
     return del([dir.build]);
 });
 
-gulp.task('build', gulp.series('clean', 'html', 'style', 'uglify', 'copy:fonts', 'images', 'sprite', 'webp'));
+gulp.task('build', gulp.series('clean', 'style', 'uglify', 'copy:fonts', 'images', 'sprite', 'webp', 'html'));
 
 gulp.task('sw', gulp.parallel('watch', 'serve'));
 
